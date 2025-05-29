@@ -1,0 +1,36 @@
+Question,Answer1,Answer2,Answer3
+q1a,25,,
+q1b,0,,
+q2a,Beauvais,7.7,
+q2b,Nice,14.2,
+q2c,Brest,15.5,
+q2d,Ajaccio,22.5,
+q2e,Ajaccio,515.8,
+q2f,Biarritz,1819.4,
+q2g,Brest,1363.2,
+q2h,Ajaccio,2854.5,
+q3a,2.6608,,
+q3b,4.0067,,
+q3c,130981.8309,,
+q3d,227994.11,,
+q4a,9.9120,,
+q4b,9.2000,,
+q4c,1.6312,,
+q5a,1848.9000,,
+q5b,1694.0000,,
+q5c,477.4871,,
+q6a,Maximum_temperature,Sunshine_duration,0.89
+q6b,Rainfall,Sunshine_duration,-0.66
+q6c,Minimum_temperature,Rainfall,-0.40
+q7,"City correlation matrix (25x25) was computed. It shows pairwise linear correlations of weather profiles between cities. Not displayed here due to its size.",,
+
+# Comments on the results : 
+# q2 : The extreme values highlight France's diverse climates. Mediterranean cities like Ajaccio and Nice show high temperatures and sunshine, with Ajaccio also having the lowest rainfall. Brest, in the northwest, records the lowest maximum temperature and sunshine duration. Biarritz, on the Atlantic coast, has the highest rainfall. These observations are consistent with known climatic patterns in France.
+# q3 : Sunshine_duration shows the highest variance (227994.1100), followed by Rainfall (130981.8309), indicating these two variables differ most significantly across the cities. Minimum_temperature has the lowest variance (2.6608), with Maximum_temperature also having a relatively low variance (4.0067). This suggests temperatures are more geographically uniform compared to rainfall and sunshine.
+# q4 : The variable with the lowest variance is Minimum_temperature. Its mean is 9.9120°C, median is 9.2000°C, and standard deviation is 1.6312°C. The mean being slightly higher than the median suggests a slight right skew in the distribution of minimum temperatures. The low standard deviation confirms its relatively small spread.
+# q5 : The variable with the highest variance is Sunshine_duration. Its mean is 1848.9000 hours, median is 1694.0000 hours, and standard deviation is 477.4871 hours. The mean is notably larger than the median, indicating a significant right skew (some cities have very high sunshine duration). The large standard deviation reflects the wide range of sunshine hours.
+# q6 :
+# - Most positively correlated: Maximum_temperature and Sunshine_duration (correlation: 0.89). Higher sunshine generally leads to higher maximum temperatures.
+# - Most negatively correlated: Rainfall and Sunshine_duration (correlation: -0.66). Increased rainfall is typically associated with less sunshine.
+# - Least correlated: Minimum_temperature and Rainfall (correlation: -0.40). This is a moderate negative correlation, the weakest among all pairs, implying that rainfall has a less direct/strong linear relationship with minimum temperatures compared to other variable pairings.
+# q7 : The correlation matrix between cities (a 25x25 matrix) was computed. It reveals how similar the overall weather profiles (based on the four variables) are between any two cities. High positive values indicate cities with very similar climates, while values near zero suggest dissimilar climates. This matrix can be useful for tasks like regional climate clustering.
